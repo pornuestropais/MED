@@ -2,16 +2,19 @@
 
 	require_once "ConexionDB.php";
 	
-	$id = $POST["id"];
-	$evaluacion = $POST["evaluacion"];
+	$id = $_POST["id"];
+	$evaluacion = utf8_encode( $_POST["evaluacion"] );
 
-	$conexion = conecevaluacionr();
+	$conexion->query( "
+		UPDATE
+			estacion4
+		SET
+			evaluacion = '$evaluacion'
+		WHERE
+			idEstacion4 = '".$id."'
+	" );
+	
 
-	$sql = "Update TerapiaFisica set evaluacion = $evaluacion where idEstacion4 = ".$id;
-
-	if (mysqli_query($conexion, $sql)) {
-		#redireccionar a la pagina
-		header('Location: estacion4.html');
-	}
+	header( 'Location: '. $direccion.'estacion4.php?id='.$id );
 
 ?>

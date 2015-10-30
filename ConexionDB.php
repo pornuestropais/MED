@@ -5,6 +5,7 @@ $username = "root";
 $password = "";
 
 $conexion = null;
+$direccion = 'http://localhost/MED/';
 
 try{
 	$conexion = new PDO( "mysql:host=$servername;dbname=mydb",$username,$password);

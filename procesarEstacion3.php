@@ -2,16 +2,19 @@
 
 	require_once "ConexionDB.php";
 	
-	$id = $POST["id"];
-	$glucometria = $POST["glucometria"];
+	$id = $_POST["id"];
+	$glucometria = $_POST["glucometria"];
 
-	$conexion = conecglucometriar();
+	//Estacion 3
+	$conexion->query( "
+		UPDATE
+			estacion3
+		SET
+			glucometria = '$glucometria'
+		WHERE
+			Estacion3 = '".$_POST[ 'id' ]."'
+	" );
 
-	$sql = "Update TerapiaFisica set glucometria = $glucometria where idEstacion3 = ".$id;
-
-	if (mysqli_query($conexion, $sql)) {
-		#redireccionar a la pagina
-		header('Location: estacion3.html');
-	}
+	header( 'Location: '. $direccion.'estacion3.php?id='.$id );
 
 ?>

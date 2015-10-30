@@ -1,5 +1,17 @@
 <?php
 require_once "ConexionDB.php";
+
+$id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
+$Peticion = $conexion->query( "SELECT * FROM estacion1 WHERE idEstacion1 =  '".$id."'" );
+$Obtener = $Peticion->Fetch( );
+
+$nop_cafe      = $Obtener[ 'nop_cafe' ];
+$nop_te        = $Obtener[ 'nop_te' ];
+$nop_drogas    = $Obtener[ 'nop_drogas' ];
+$nop_alcohol   = $Obtener[ 'nop_alcohol' ];
+$nop_otros     = $Obtener[ 'nop_otros' ];
+$medicamentos  = $Obtener[ 'medicamentos' ];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,117 +37,95 @@ require_once "ConexionDB.php";
     <div class="container" style="margin-top: 20px;">
       <div class="row">
         <div class="col-md-12">
-          <form action="post" method="procesarEstacion1.php">
+          <form method="post" action="<?php echo $direccion; ?>procesarEstacion1.php" >
             <div class="form-group">
-              <label>Nombre</label>
-              <input type="text" class="form-control" name="nombre" required />
-            </div>
-
-             <div class="form-group">
-              <label>Edad</label>
-              <input type="int" class="form-control" name="edad" required />
-            </div>
-
-             <div class="form-group">
-              <label>Sexo</label>
-              <input type="text" class="form-control" name="sexo" required />
-            </div>
-
-             <div class="form-group">
-              <label>Dirección</label>
-              <input type="text" class="form-control" name="direccion" required />
-            </div>
-
-             <div class="form-group">
-              <label>Estado civil</label>
-              <select name="estado_civil" class="form-control">
-                <option value="codigo">Casad@</option>
-                <option value="sad">Viud@</option>
-                <option value="enbusqueda">Solter@</option>
-                <option value="separadoalafuerza">Divorcia@</option>
-              </select>
-            </div>
-
-             <div class="form-group">
-              <label>Cantidad de hijos</label>
-              <input type="number" class="form-control" name="hijos" required />
+              <label>ID Persona</label>
+              <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
              <div class="form-group">
               <label>DM</label>
-              <input type="text" class="form-control" name="pat_dm" required />
+              <input type="text" class="form-control" name="pat_dm" required value="<?php echo $Obtener[ 'pat_dm' ]; ?>" />
             </div>
 
             <div class="form-group">
               <label>HTA</label>
-              <input type="text" class="form-control" name="pat_hta" required />
+              <input type="text" class="form-control" name="pat_hta" required value="<?php echo $Obtener[ 'pat_hta' ]; ?>" />
             </div>
 
             <div class="form-group">
               <label>Alergias</label>
-              <textarea required class="form-control" name="pat_alergias"></textarea>
+              <textarea required class="form-control" name="pat_alergias"><?php echo $Obtener[ 'pat_alergias' ]; ?></textarea>
             </div>
 
             <div class="form-group">
               <label>Cirugías</label>
-              <textarea required class="form-control" name="pat_cirugias"></textarea>
+              <textarea required class="form-control" name="pat_cirugias"><?php echo $Obtener[ 'pat_cirugias' ]; ?></textarea>
             </div>
 
             <div class="form-group">
               <label>Otras patologías</label>
-              <textarea required class="form-control" name="pat_otros"></textarea>
+              <textarea required class="form-control" name="pat_otros"><?php echo $Obtener[ 'pat_otros' ]; ?></textarea>
             </div>
 
             <div class="form-group">
               <label>Consume café?</label>
               <select name="nop_cafe" class="form-control">
-                <option class="1">Si</option>
-                <option class="0">No</option>
+                <?php
+                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                  echo "<option value=\"$valor\" ".( ( $nop_cafe == $valor ) ? 'selected' : '' ) .">$nombre</option>";
+                }
+                ?>
               </select>
             </div>
 
             <div class="form-group">
               <label>Consume té?</label>
               <select name="nop_te" class="form-control">
-                <option class="1">Si</option>
-                <option class="0">No</option>
+                <?php
+                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                  echo "<option value=\"$valor\" ".( ( $nop_te == $valor ) ? 'selected' : '' ) .">$nombre</option>";
+                }
+                ?>
               </select>
             </div>
 
             <div class="form-group">
               <label>Consume drogas?</label>
               <select name="nop_drogas" class="form-control">
-                <option class="1">Si</option>
-                <option class="0">No</option>
+                <?php
+                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                  echo "<option value=\"$valor\" ".( ( $nop_drogas == $valor ) ? 'selected' : '' ) .">$nombre</option>";
+                }
+                ?>
               </select>
             </div>
 
             <div class="form-group">
               <label>Consume Alcohol?</label>
               <select name="nop_alcohol" class="form-control">
-                <option class="1">Si</option>
-                <option class="0">No</option>
+                <?php
+                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                  echo "<option value=\"$valor\" ".( ( $nop_alcohol == $valor ) ? 'selected' : '' ) .">$nombre</option>";
+                }
+                ?>
               </select>
             </div>
 
             <div class="form-group">
               <label>Otros?</label>
               <select name="nop_otros" class="form-control">
-                <option class="1">Si</option>
-                <option class="0">No</option>
+                <?php
+                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                  echo "<option value=\"$valor\" ".( ( $nop_otros == $valor ) ? 'selected' : '' ) .">$nombre</option>";
+                }
+                ?>
               </select>
             </div>
 
             <div class="form-group">
               <label>Medicamentos</label>
-              <select name="medicamentos" class="form-control" multiple>
-                <?php
-                  $Peticion = "SELECT id, nombre FROM medicamentos ORDER BY nombre";
-                  foreach ( $conexion->query( $Peticion ) as $medicamento ) {
-                    echo "<option value=\"".$medicamento[ 'id' ]."\">".$medicamento[ 'nombre' ]."</option>";
-                  }
-                ?>
-              </select>
+              <textarea name="medicamentos" class="form-control"><?php echo $Obtener[ 'medicamentos' ]; ?></textarea>
             </div>
 
             <div class="form-group">
@@ -151,9 +141,6 @@ require_once "ConexionDB.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-    <script type="text/javascript">
-      $('select').select2();
-    </script>
+
   </body>
 </html>
