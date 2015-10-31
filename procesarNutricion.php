@@ -1,26 +1,30 @@
 <?php
 
 	require_once "ConexionDB.php";
-	
-	$id = $POST["id"];
-	$peso = $POST["peso"];
-	$talla = $POST["talla"];
-	$imc = $POST["imc"];
-	$circunferencia_branquial = $POST["circunferencia_branquial"];
-	$circunferencia_abdominal = $POST["circunferencia_abdominal"];
-	$circunferencia_cadera = $POST["circunferencia_cadera"];
-	$pliege_tricipital = $POST["pliege_tricipital"];
-	$pliege_branquial = $POST["pliege_branquial"];
-	$pliege_cadera = $POST["pliege_cadera"];
-	$pliege_muslo = $POST["pliege_muslo"];
 
-	$conexion = conectar();
+$conexion->query( "
+		UPDATE
+			nutricion
+		SET
+			peso = '".$_POST[ 'peso' ]."',
+			talla = '".$_POST[ 'talla' ]."',
+			imc = '".$_POST[ 'imc' ]."',
+			circunferencia_branquial = '".$_POST[ 'circunferencia_branquial' ]."',
+			circunferencia_abdominal = '".$_POST[ 'circunferencia_abdominal' ]."',
+			circunferencia_Cadera = '".$_POST[ 'circunferencia_Cadera' ]."',
+			pliegue_tricipital = '".$_POST[ 'pliegue_tricipital' ]."',
+			pliegue_branquial = '".$_POST[ 'pliegue_branquial' ]."',
+			pliegue_cadera = '".$_POST[ 'pliegue_cadera' ]."',
+			pliegue_muslo = '".$_POST[ 'pliegue_muslo' ]."'
+		WHERE
+			idNutricion = '".$_POST[ 'id' ]."'
+	" );
 
-	$sql = "Update Nutricion set peso = $peso, talla = $talla, imc = $imc, circunferencia_branquial = $circunferencia_branquial, circunferencia_abdominal = $circunferencia_abdominal, circunferencia_cadera = $circunferencia_cadera, pliege_tricipital = $pliege_tricipital, pliege_branquial = $pliege_branquial, pliege_cadera = $pliege_cadera, pliege_muslo = $pliege_muslo where idNutricion = ".$id;
 
-	if (mysqli_query($conexion, $sql)) {
-		#redireccionar a la pagina
-		 header( 'Location: '. $direccion.'nutricion.php?id='.$id );
-	}
+//Insertar medicamentos
+#foreach ( $_POST[ 'medicamentos' ] as $trash => $medicamento ) {
+#	$conexion->query( "INSERT INTO medicamentos_estacion1 VALUES( '".$id_estacion1."', '".$medicamento."' )" );
+#}
 
+header( 'Location: '. $direccion.'nutricion.php?id='.$_POST[ 'id' ] );
 ?>
