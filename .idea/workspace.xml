@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2d4709f-f6d5-46f6-a5a9-3408fbf1f605" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/estomatologia.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/procesarEstomatologia.php" afterPath="$PROJECT_DIR$/procesarEstomatologia.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MED.iws" />
@@ -37,16 +40,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConexionDB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConexionDB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="procesarNutricion.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/procesarNutricion.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,41 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.923077">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="procesarExpediente.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/procesarExpediente.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.3461537">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1446295941909" expanded="true" signature="273:393" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="408:468" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="483:535" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="550:610" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="625:791" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="806:858" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="873:925" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="940:992" placeholder="Insert into ..." />
-                <marker date="1446295941909" expanded="true" signature="1007:1059" placeholder="Insert into ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="persona.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/persona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.5384617">
-              <caret line="14" column="68" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="68" />
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="124" />
               <folding>
                 <element signature="e#6#90#0#PHP" expanded="true" />
                 <marker date="1446322213546" expanded="true" signature="215:265" placeholder="SELECT * FRO..persona..." />
@@ -102,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="procesarPersona.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="procesarPersona.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/procesarPersona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7375643">
+            <state vertical-scroll-proportion="-16.538462">
               <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
@@ -115,11 +78,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="estomatologia.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/estomatologia.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.153847">
+              <caret line="113" column="109" selection-start-line="113" selection-start-column="109" selection-end-line="113" selection-end-column="109" />
+              <folding>
+                <element signature="e#6#90#0#PHP" expanded="true" />
+                <marker date="1446324629029" expanded="true" signature="214:276" placeholder="SELECT * FRO..estomatologia..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="procesarEstomatologia.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/procesarEstomatologia.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2915952">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <marker date="1446325081989" expanded="true" signature="74:767" placeholder="UPDATE estac..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="procesarEstacion1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/procesarEstacion1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="2" />
               <folding>
                 <marker date="1446295941882" expanded="true" signature="77:637" placeholder="UPDATE estac..." />
               </folding>
@@ -142,8 +140,8 @@
       <file leaf-file-name="estacion1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/estacion1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="17.0">
-              <caret line="78" column="23" selection-start-line="72" selection-start-column="14" selection-end-line="78" selection-end-column="23" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="126" />
               <folding />
             </state>
           </provider>
@@ -157,11 +155,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/nutricion.php" />
         <option value="$PROJECT_DIR$/procesarNutricion.php" />
         <option value="$PROJECT_DIR$/persona.php" />
         <option value="$PROJECT_DIR$/procesarPersona.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/estomatologia.php" />
+        <option value="$PROJECT_DIR$/procesarEstomatologia.php" />
       </list>
     </option>
   </component>
@@ -382,28 +382,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.923077">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/procesarExpediente.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="6.3461537">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1446295941909" expanded="true" signature="273:393" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="408:468" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="483:535" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="550:610" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="625:791" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="806:858" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="873:925" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="940:992" placeholder="Insert into ..." />
-            <marker date="1446295941909" expanded="true" signature="1007:1059" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
+            <marker date="1446295941909" expanded="true" signature="-1:-1" placeholder="Insert into ..." />
           </folding>
         </state>
       </provider>
@@ -437,14 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/estacion1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.0">
-          <caret line="78" column="23" selection-start-line="72" selection-start-column="14" selection-end-line="78" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/procesarEstacion2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
@@ -455,10 +439,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/procesarPersona.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.538462">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1446322531321" expanded="true" signature="167:476" placeholder="UPDATE estac..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/estomatologia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/persona.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.5384617">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="68" />
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="124" />
           <folding>
             <element signature="e#6#90#0#PHP" expanded="true" />
             <marker date="1446322213546" expanded="true" signature="215:265" placeholder="SELECT * FRO..persona..." />
@@ -466,23 +477,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/estacion1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/procesarEstacion1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="2" />
           <folding>
             <marker date="1446295941882" expanded="true" signature="77:637" placeholder="UPDATE estac..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/procesarPersona.php">
+    <entry file="file://$PROJECT_DIR$/estomatologia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7375643">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        <state vertical-scroll-proportion="-53.153847">
+          <caret line="113" column="109" selection-start-line="113" selection-start-column="109" selection-end-line="113" selection-end-column="109" />
           <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1446322531321" expanded="true" signature="167:476" placeholder="UPDATE estac..." />
+            <element signature="e#6#90#0#PHP" expanded="true" />
+            <marker date="1446324629029" expanded="true" signature="214:276" placeholder="SELECT * FRO..estomatologia..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procesarEstomatologia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2915952">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <marker date="1446325081989" expanded="true" signature="74:767" placeholder="UPDATE estac..." />
           </folding>
         </state>
       </provider>
