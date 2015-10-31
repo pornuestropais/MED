@@ -89,28 +89,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persona.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="persona.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/persona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7667239">
-              <caret line="79" column="64" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
+            <state vertical-scroll-proportion="6.5384617">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="68" />
               <folding>
                 <element signature="e#6#90#0#PHP" expanded="true" />
-                <marker date="1446314906852" expanded="true" signature="215:265" placeholder="SELECT * FRO..persona..." />
+                <marker date="1446322213546" expanded="true" signature="215:265" placeholder="SELECT * FRO..persona..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="procesarPersona.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="procesarPersona.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/procesarPersona.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.7375643">
+              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
               <folding>
-                <marker date="1446314716964" expanded="true" signature="61:93" placeholder="INSERT INTO ..." />
-                <marker date="1446314716964" expanded="true" signature="61:111" placeholder="INSERT INTO ..." />
-                <marker date="1446314716964" expanded="true" signature="61:378" placeholder="INSERT INTO ..." />
+                <element signature="e#6#89#0#PHP" expanded="true" />
+                <marker date="1446322531321" expanded="true" signature="167:476" placeholder="UPDATE estac..." />
               </folding>
             </state>
           </provider>
@@ -119,8 +118,8 @@
       <file leaf-file-name="procesarEstacion1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/procesarEstacion1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="30" selection-end-column="72" />
+            <state vertical-scroll-proportion="-13.730769">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <marker date="1446295941882" expanded="true" signature="77:637" placeholder="UPDATE estac..." />
               </folding>
@@ -161,8 +160,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/nutricion.php" />
         <option value="$PROJECT_DIR$/procesarNutricion.php" />
-        <option value="$PROJECT_DIR$/procesarPersona.php" />
         <option value="$PROJECT_DIR$/persona.php" />
+        <option value="$PROJECT_DIR$/procesarPersona.php" />
       </list>
     </option>
   </component>
@@ -273,7 +272,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446314921646</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Arreglando persona">
+      <created>1446322581337</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1446322581337</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -315,7 +320,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subiendo persona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subiendo persona" />
+    <MESSAGE value="Arreglando persona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglando persona" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -431,13 +437,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/procesarEstacion1.php">
+    <entry file="file://$PROJECT_DIR$/estacion1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="30" selection-end-column="72" />
-          <folding>
-            <marker date="1446295941882" expanded="true" signature="77:637" placeholder="UPDATE estac..." />
-          </folding>
+        <state vertical-scroll-proportion="17.0">
+          <caret line="78" column="23" selection-start-line="72" selection-start-column="14" selection-end-line="78" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -451,33 +455,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/estacion1.php">
+    <entry file="file://$PROJECT_DIR$/persona.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="17.0">
-          <caret line="78" column="23" selection-start-line="72" selection-start-column="14" selection-end-line="78" selection-end-column="23" />
-          <folding />
+        <state vertical-scroll-proportion="6.5384617">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="68" />
+          <folding>
+            <element signature="e#6#90#0#PHP" expanded="true" />
+            <marker date="1446322213546" expanded="true" signature="215:265" placeholder="SELECT * FRO..persona..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procesarEstacion1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.730769">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <marker date="1446295941882" expanded="true" signature="77:637" placeholder="UPDATE estac..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/procesarPersona.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.7375643">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
           <folding>
-            <marker date="1446314716964" expanded="true" signature="61:93" placeholder="INSERT INTO ..." />
-            <marker date="1446314716964" expanded="true" signature="61:111" placeholder="INSERT INTO ..." />
-            <marker date="1446314716964" expanded="true" signature="61:378" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persona.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7667239">
-          <caret line="79" column="64" selection-start-line="79" selection-start-column="64" selection-end-line="79" selection-end-column="64" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <marker date="1446314906852" expanded="true" signature="215:265" placeholder="SELECT * FRO..persona..." />
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1446322531321" expanded="true" signature="167:476" placeholder="UPDATE estac..." />
           </folding>
         </state>
       </provider>
