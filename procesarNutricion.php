@@ -20,7 +20,7 @@
 
 	if (mysqli_query($conexion, $sql)) {
 		#redireccionar a la pagina
-		header('Location: nutricion.html');
+		 header( 'Location: '. $direccion.'nutricion.php?id='.$id );
 	}
 
 ?>
