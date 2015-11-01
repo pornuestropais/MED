@@ -44,11 +44,17 @@ $Obtener = $Peticion->Fetch( );
             </div>
 
             <div class="form-group">
-              <button class="btn btn-primary">Procesar</button>
+              <button class="btn btn-primary" style="display: block; width: 100%;margin-bottom: 10px">Procesar</button>
             </div>
           </form>
         </div>
-
+        <div class="form-group">
+          <div class="col-xs-6 col-md-12">
+            <a href="<?php echo $direccion;?>index.php">
+              <button class="btn btn-danger" style="display: block; width: 100%;margin-bottom: 10px">Volver Atras</button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
