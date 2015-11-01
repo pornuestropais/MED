@@ -13,7 +13,10 @@ $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
 
 $Peticion = $conexion->query( "SELECT * FROM estomatologia WHERE idEstomatologia =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
-
+$ayuna = $Obtener[ 'ayuna' ];
+$tratamiento_medico = $Obtener[ 'tratamiento_medico' ];
+$enfermedad = $Obtener[ 'enfermedad' ];
+$alergias= $Obtener[ 'alergias' ];
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +46,7 @@ $Obtener = $Peticion->Fetch( );
          <form method="post" action="<?php echo $direccion; ?>procesarEstomatologia.php" >
             <div class="form-group">
                <label>ID Persona</label>
-               <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+               <input type="text" readonly readonlyplaceholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
             <div class="form-group">

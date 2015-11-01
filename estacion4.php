@@ -35,12 +35,12 @@ $Obtener = $Peticion->Fetch( );
             
             <div class="form-group">
               <label>ID Persona</label>
-              <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+              <input type="text" readonly placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
             
             <div class="form-group">
               <label>Evaluaci&oacute;n</label>
-              <textarea placeholder="Cua&aacute; fue la evaluaci&oacute;n de esta persona?" name="evaluacion" class="form-control"><?php echo $Obtener[ 'evaluacion' ]; ?></textarea>
+              <textarea placeholder="Cu&aacute;l fue la evaluaci&oacute;n de esta persona?" name="evaluacion" class="form-control"><?php echo $Obtener[ 'evaluacion' ]; ?></textarea>
             </div>
 
             <div class="form-group">

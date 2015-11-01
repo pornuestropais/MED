@@ -5,10 +5,10 @@ $username = "root";
 $password = "";
 
 $conexion = null;
-$direccion = 'http://148.255.78.61:8000/MED/';
+$direccion = 'http://pornuestropais.org/MED/';
 
 try{
-	$conexion = new PDO( "mysql:host=$servername;dbname=mydb",$username,$password);
+	$conexion = new PDO( "mysql:host=$servername;dbname=_MED",$username,$password);
 	$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	return $conexion;
 } catch(PDOException $exepcion) {

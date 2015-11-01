@@ -44,57 +44,57 @@ $Obtener = $Peticion->Fetch( );
          <form method="post" action="<?php echo $direccion; ?>procesarNutricion.php" >
             <div class="form-group">
                <label>ID Persona</label>
-               <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+               <input type="text" readonly placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
             <div class="form-group">
                <label>Peso</label>
-               <input type="text" class="form-control" name="peso" required value="<?php echo $Obtener[ 'peso' ]; ?>" />
+               <input type="number" class="form-control" name="peso" required value="<?php echo $Obtener[ 'peso' ]; ?>" />
             </div>
 
             <div class="form-group">
                <label>Talla</label>
-               <input type="text" class="form-control" name="talla" required value="<?php echo $Obtener[ 'talla' ]; ?>" />
+               <input type="number" class="form-control" name="talla" required value="<?php echo $Obtener[ 'talla' ]; ?>" />
             </div>
 
             <div class="form-group">
                <label>IMC</label>
-               <textarea required class="form-control" name="imc"><?php echo $Obtener[ 'imc' ]; ?></textarea>
+               <input required type="number" class="form-control" name="imc" value="<?php echo $Obtener[ 'imc' ]; ?>"/>
             </div>
 
             <div class="form-group">
                <label>Circunferencia Branquial</label>
-               <textarea required class="form-control" name="circunferencia_branquial"><?php echo $Obtener[ 'circunferencia_branquial' ]; ?></textarea>
+               <input required type="number" class="form-control" name="circunferencia_branquial" value="<?php echo $Obtener[ 'circunferencia_branquial' ]; ?>"/>
             </div>
 
             <div class="form-group">
                <label>Circunferencia Abdominal</label>
-               <textarea required class="form-control" name="circunferencia_abdominal"><?php echo $Obtener[ 'circunferencia_abdominal' ]; ?></textarea>
+               <input required type="number" class="form-control" name="circunferencia_abdominal" value="<?php echo $Obtener[ 'circunferencia_abdominal' ]; ?>" />
             </div>
 
             <div class="form-group">
                <label>Circunferencia Cadera</label>
-               <textarea required class="form-control" name="circunferencia_Cadera"><?php echo $Obtener[ 'circunferencia_Cadera' ]; ?></textarea>
+               <input required type="number" class="form-control" name="circunferencia_Cadera" value="<?php echo $Obtener[ 'circunferencia_Cadera' ]; ?>">
             </div>
 
             <div class="form-group">
                <label>Pliegue Tricipital</label>
-               <textarea required class="form-control" name="pliegue_tricipital"><?php echo $Obtener[ 'pliegue_tricipital' ]; ?></textarea>
+               <input required type="number" class="form-control" name="pliegue_tricipital" value="<?php echo $Obtener[ 'pliegue_tricipital' ]; ?>">
             </div>
 
             <div class="form-group">
                <label>Pliegue Branquial</label>
-               <textarea required class="form-control" name="pliegue_branquial"><?php echo $Obtener[ 'pliegue_branquial' ]; ?></textarea>
+               <input required type="number" class="form-control" name="pliegue_branquial" value="<?php echo $Obtener[ 'pliegue_branquial' ]; ?>">
             </div>
 
             <div class="form-group">
                <label>Pliegue Cadera</label>
-               <textarea required class="form-control" name="pliegue_cadera"><?php echo $Obtener[ 'pliegue_cadera' ]; ?></textarea>
+               <input required type="number" class="form-control" name="pliegue_cadera" value="<?php echo $Obtener[ 'pliegue_cadera' ]; ?>">
             </div>
 
             <div class="form-group">
                <label>Pliegue Muslo</label>
-               <textarea required class="form-control" name="pliegue_muslo"><?php echo $Obtener[ 'pliegue_muslo' ]; ?></textarea>
+               <input required type="number" class="form-control" name="pliegue_muslo" value="<?php echo $Obtener[ 'pliegue_muslo' ]; ?>">
             </div>
 
             <div class="form-group">

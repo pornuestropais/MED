@@ -12,7 +12,7 @@
 		SET
 			glucometria = '$glucometria'
 		WHERE
-			Estacion3 = '".$_POST[ 'id' ]."'
+			idEstacion3 = '".$_POST[ 'id' ]."'
 	" );
 
 	header( 'Location: '. $direccion.'estacion3.php?id='.$id );

@@ -5,7 +5,8 @@ $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
 
 $Peticion = $conexion->query( "SELECT * FROM persona WHERE IdPersona =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
-
+$estado_civil     = $Obtener[ 'estado_civil' ];
+$sexo  = $Obtener[ 'sexo' ];
 ?>
 
 <!DOCTYPE html>
@@ -35,17 +36,17 @@ $Obtener = $Peticion->Fetch( );
          <form method="post" action="<?php echo $direccion; ?>procesarPersona.php" >
             <div class="form-group">
                   <label>ID Persona</label>
-                  <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+                  <input type="text" readonly placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
             <div class="form-group">
-               <label>Nombre</label>
+               <label>Nombre Completo</label>
                <input type="text" class="form-control" name="nombre" required value="<?php echo $Obtener[ 'nombre' ]; ?>" />
             </div>
 
             <div class="form-group">
                <label>Edad</label>
-               <input type="text" class="form-control" name="edad" required value="<?php echo $Obtener[ 'edad' ]; ?>" />
+               <input type="number" class="form-control" name="edad" required value="<?php echo $Obtener[ 'edad' ]; ?>" />
             </div>
 
             <div class="form-group">
@@ -77,7 +78,7 @@ $Obtener = $Peticion->Fetch( );
 
             <div class="form-group">
                <label>Cantidad de Hijos</label>
-               <input required class="form-control" name="hijos"><?php echo $Obtener[ 'hijos' ]; ?>
+               <input required class="form-control" type="number" name="hijos" value="<?php echo $Obtener[ 'hijos' ]; ?>"/>
             </div>
 
             <div class="form-group">

@@ -40,7 +40,7 @@ $medicamentos  = $Obtener[ 'medicamentos' ];
           <form method="post" action="<?php echo $direccion; ?>procesarEstacion1.php" >
             <div class="form-group">
               <label>ID Persona</label>
-              <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+              <input type="text" readonly placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
              <div class="form-group">

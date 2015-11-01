@@ -3,7 +3,7 @@ require_once "ConexionDB.php";
 
 $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
 
-$Peticion = $conexion->query( "SELECT glucometria FROM estacion3 WHERE Estacion3 =  '".$id."'" );
+$Peticion = $conexion->query( "SELECT glucometria FROM estacion3 WHERE idEstacion3 =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
 
 ?>
@@ -35,7 +35,7 @@ $Obtener = $Peticion->Fetch( );
             
            <div class="form-group">
               <label>ID Persona</label>
-              <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+              <input type="text" readonly placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
             <div class="form-group">
