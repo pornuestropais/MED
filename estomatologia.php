@@ -43,7 +43,7 @@ $Obtener = $Peticion->Fetch( );
          <form method="post" action="<?php echo $direccion; ?>procesarEstomatologia.php" >
             <div class="form-group">
                <label>ID Persona</label>
-               <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="IdPersona" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+               <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
             <div class="form-group">
@@ -111,7 +111,7 @@ $Obtener = $Peticion->Fetch( );
             </div>
             <div class="form-group">
                <label>Diagnostico</label>
-               <textarea required class="form-control" name="diiagnostico"><?php echo $Obtener[ 'diiagnostico' ]; ?></textarea>
+               <textarea required class="form-control" name="diagnostico"><?php echo $Obtener[ 'diagnostico' ]; ?></textarea>
             </div>
 
             <div class="form-group">

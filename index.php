@@ -1,3 +1,8 @@
+<?php
+require_once "ConexionDB.php";
+
+$id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,8 +23,24 @@
     <![endif]-->
   </head>
   <body>
-    
+  <!-- Temporal deben acomodarlo como va y quitar del bootstrap.min.css el paddin agregado-->
+  <div align="center" class="miContenedor">
+    <div class="row">
+      <div class="col-md-12">
+        <form method="post" action="<?php echo $direccion; ?>procesarMenu.php" >
 
+          <div class="form-group">
+            <label>Ticket Persona</label>
+            <input type="text" placeholder="Numero de Ticket" class="form-control" name="id" required/>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" style="display: block; width: 100%;margin-bottom: 10px">Ir al Menu</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

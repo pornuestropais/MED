@@ -1,13 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jrozon
- * Date: 10/31/2015
- * Time: 9:02 AM
- */
-?>
-
-<?php
 require_once "ConexionDB.php";
 
 $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
@@ -44,7 +35,7 @@ $Obtener = $Peticion->Fetch( );
          <form method="post" action="<?php echo $direccion; ?>procesarPersona.php" >
             <div class="form-group">
                   <label>ID Persona</label>
-                  <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="IdPersona" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
+                  <input type="text" placeholder="Numeraci&oacute;n de la persona" class="form-control" name="id" required value="<?php echo ( isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : '' ); ?>" />
             </div>
 
             <div class="form-group">

@@ -22,14 +22,8 @@ $conexion->query( "
 			estado_civil = '".$_POST[ 'estado_civil' ]."',
 			hijos = '".$_POST[ 'hijos' ]."'
 		WHERE
-			IdPersona = '".$_POST[ 'IdPersona' ]."'
+			IdPersona = '".$_POST[ 'id' ]."'
 	" );
-
-
-//Insertar medicamentos
-#foreach ( $_POST[ 'medicamentos' ] as $trash => $medicamento ) {
-#	$conexion->query( "INSERT INTO medicamentos_estacion1 VALUES( '".$id_estacion1."', '".$medicamento."' )" );
-#}
 
 header( 'Location: '. $direccion.'persona.php?id='.$_POST[ 'id' ] );
 

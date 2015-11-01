@@ -15,7 +15,7 @@ $conexion->query( "
 			enfermedad_descripcion = '".$_POST[ 'enfermedad_descripcion' ]."',
 			alergias = '".$_POST[ 'alergias' ]."',
 			alergias_descripcion = '".$_POST[ 'alergias_descripcion' ]."',
-			diiagnostico = '".$_POST[ 'diiagnostico' ]."',
+			diagnostico = '".$_POST[ 'diagnostico' ]."',
 			tratamiento = '".$_POST[ 'tratamiento' ]."',
 			nombre_supervisor = '".$_POST[ 'nombre_supervisor' ]."'
 		WHERE
