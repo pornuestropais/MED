@@ -10,7 +10,7 @@
 	//Estacion 1
 	$conexion->query( "
 		UPDATE
-			estacion2
+			Estacion2
 		SET
 			TA = '$TA',
 			FC = '$FC',

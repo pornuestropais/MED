@@ -13,7 +13,7 @@ require_once "ConexionDB.php";
 //Estacion 1
 $conexion->query( "
 		UPDATE
-			persona
+			Persona
 		SET
 			nombre = '".$_POST[ 'nombre' ]."',
 			edad = '".$_POST[ 'edad' ]."',

@@ -3,7 +3,7 @@ require_once "ConexionDB.php";
 
 $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
 
-$Peticion = $conexion->query( "SELECT glucometria FROM estacion3 WHERE idEstacion3 =  '".$id."'" );
+$Peticion = $conexion->query( "SELECT glucometria FROM Estacion3 WHERE idEstacion3 =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
 
 ?>

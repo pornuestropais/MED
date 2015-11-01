@@ -1,6 +1,6 @@
 <?php
 	
-	require_once "ConexionDB.php";
+	require_once $direccion."/ConexionDB.php";
 	$id = 1;
 	for($id = 1;$id<=1000;$id++) {
 

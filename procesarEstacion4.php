@@ -7,7 +7,7 @@
 
 	$conexion->query( "
 		UPDATE
-			estacion4
+			Estacion4
 		SET
 			evaluacion = '$evaluacion'
 		WHERE

@@ -4,7 +4,7 @@
 
 $conexion->query( "
 		UPDATE
-			nutricion
+			Nutricion
 		SET
 			peso = '".$_POST[ 'peso' ]."',
 			talla = '".$_POST[ 'talla' ]."',

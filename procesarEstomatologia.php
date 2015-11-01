@@ -5,7 +5,7 @@ require_once "ConexionDB.php";
 //Estacion 1
 $conexion->query( "
 		UPDATE
-			 estomatologia
+			 Estomatologia
 		SET
 			facilitador = '".$_POST[ 'facilitador' ]."',
 			ayuna = '".$_POST[ 'ayuna' ]."',

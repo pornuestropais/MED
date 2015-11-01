@@ -8,7 +8,7 @@
 	//Estacion 3
 	$conexion->query( "
 		UPDATE
-			estacion3
+			Estacion3
 		SET
 			glucometria = '$glucometria'
 		WHERE

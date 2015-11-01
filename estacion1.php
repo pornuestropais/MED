@@ -2,7 +2,7 @@
 require_once "ConexionDB.php";
 
 $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
-$Peticion = $conexion->query( "SELECT * FROM estacion1 WHERE idEstacion1 =  '".$id."'" );
+$Peticion = $conexion->query( "SELECT * FROM Estacion1 WHERE idEstacion1 =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
 
 $nop_cafe      = $Obtener[ 'nop_cafe' ];
@@ -72,7 +72,8 @@ $medicamentos  = $Obtener[ 'medicamentos' ];
               <label>Consume café?</label>
               <select name="nop_cafe" class="form-control">
                 <?php
-                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                $listado = array('No','Si');
+                foreach($listado as $valor => $nombre ){
                   echo "<option value=\"$valor\" ".( ( $nop_cafe == $valor ) ? 'selected' : '' ) .">$nombre</option>";
                 }
                 ?>
@@ -83,7 +84,8 @@ $medicamentos  = $Obtener[ 'medicamentos' ];
               <label>Consume té?</label>
               <select name="nop_te" class="form-control">
                 <?php
-                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                $listado = array('No','Si');
+                foreach($listado as $valor => $nombre ){
                   echo "<option value=\"$valor\" ".( ( $nop_te == $valor ) ? 'selected' : '' ) .">$nombre</option>";
                 }
                 ?>
@@ -94,7 +96,8 @@ $medicamentos  = $Obtener[ 'medicamentos' ];
               <label>Consume drogas?</label>
               <select name="nop_drogas" class="form-control">
                 <?php
-                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                $listado = array('No','Si');
+                foreach($listado as $valor => $nombre ){
                   echo "<option value=\"$valor\" ".( ( $nop_drogas == $valor ) ? 'selected' : '' ) .">$nombre</option>";
                 }
                 ?>
@@ -105,7 +108,8 @@ $medicamentos  = $Obtener[ 'medicamentos' ];
               <label>Consume Alcohol?</label>
               <select name="nop_alcohol" class="form-control">
                 <?php
-                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                $listado = array('No','Si');
+                foreach($listado as $valor => $nombre ){
                   echo "<option value=\"$valor\" ".( ( $nop_alcohol == $valor ) ? 'selected' : '' ) .">$nombre</option>";
                 }
                 ?>
@@ -116,7 +120,8 @@ $medicamentos  = $Obtener[ 'medicamentos' ];
               <label>Otros?</label>
               <select name="nop_otros" class="form-control">
                 <?php
-                foreach( [ 'No', 'Si' ] as $valor => $nombre ){
+                $listado = array('No','Si');
+                foreach($listado as $valor => $nombre ){
                   echo "<option value=\"$valor\" ".( ( $nop_otros == $valor ) ? 'selected' : '' ) .">$nombre</option>";
                 }
                 ?>

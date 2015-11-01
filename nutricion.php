@@ -1,18 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jrozon
- * Date: 10/31/2015
- * Time: 9:02 AM
- */
-?>
-
-<?php
 require_once "ConexionDB.php";
 
 $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
 
-$Peticion = $conexion->query( "SELECT * FROM nutricion WHERE idNutricion =  '".$id."'" );
+$Peticion = $conexion->query( "SELECT * FROM Nutricion WHERE idNutricion =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
 
 ?>

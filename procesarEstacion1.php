@@ -5,7 +5,7 @@
 	//Estacion 1
 	$conexion->query( "
 		UPDATE
-			estacion1
+			Estacion1
 		SET
 			pat_dm = '".$_POST[ 'pat_dm' ]."',
 			pat_hta = '".$_POST[ 'pat_hta' ]."',

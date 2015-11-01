@@ -3,9 +3,9 @@ require_once "ConexionDB.php";
 
 $id = isset( $_GET[ 'id' ] ) ? $_GET[ 'id' ] : 0;
 
-$Peticion = $conexion->query( "SELECT * FROM persona WHERE IdPersona =  '".$id."'" );
+$Peticion = $conexion->query( "SELECT * FROM Persona WHERE idPersona =  '".$id."'" );
 $Obtener = $Peticion->Fetch( );
-$estado_civil     = $Obtener[ 'estado_civil' ];
+$estado_civil= $Obtener[ 'estado_civil' ];
 $sexo  = $Obtener[ 'sexo' ];
 ?>
 
@@ -53,7 +53,8 @@ $sexo  = $Obtener[ 'sexo' ];
                <label>Sexo</label>
                <select name="sexo" class="form-control">
                   <?php
-                  foreach( [ 'M', 'F' ] as $valor => $sexos ){
+                  $listado = array('M','F');
+                  foreach( $listado as $valor => $sexos ){
                      echo "<option value=\"$valor\" ".( ( $sexo == $valor ) ? 'selected' : '' ) .">$sexos</option>";
                   }
                   ?>
@@ -69,8 +70,9 @@ $sexo  = $Obtener[ 'sexo' ];
                <label>Estado Civil</label>
                <select name="estado_civil" class="form-control">
                   <?php
-                  foreach( [ 'Casado(a)', 'Soltero(a)','Viudo(a)'] as $valor => $estado ){
-                     echo "<option value=\"$valor\" ".( ( $estado_civil == $valor ) ? 'selected' : '' ) .">$estado</option>";
+                  $listado = array('Casado(a)', 'Soltero(a)','Viudo(a)');
+                  foreach($listado as $valor=>$estado_civil ){
+                     echo "<option value=\"$valor\" ".( ( $estado_civil == $valor ) ? 'selected' : '' ) .">$estado_civil</option>";
                   }
                   ?>
                </select>
